@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: inherit; */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* display: flex; */
+  background-color: rgb(178, 169, 238);
+  /* background: linear-gradient(to top left, #8965dd, #98c9f1); */
+  height: 100%;
+  position: relative;
+}
+
+.questions {
+  padding: 3rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.joke-question {
+  min-height: 265px;
+  max-width: 320px;
+  background-color: rgb(160, 238, 233);
+  padding: 4.5rem 4rem;
+  font-size: 1.5rem;
+  border: 1px solid rgb(12, 120, 84);
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.joke-question:hover {
+  background-color: rgb(142, 210, 205);
+  cursor: pointer;
+}
+
+.joke-answer {
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  transform: translate(-0%, 75%);
+
+  width: 270px;
+  height: 200px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid rgb(170, 99, 99);
+  border-radius: 0.5rem;
+  background-color: rgb(250, 205, 212);
+  padding: 3rem 1.5rem 1rem 1.5rem;
+  margin: 0.5rem;
+}
+
+.xClose {
+  float: right;
+  width: 2.7rem;
+  margin: -2.5rem -0.9rem;
+  font-size: 2rem;
+  background-color: rgb(255, 163, 177);
+  border: 1px solid rgb(255, 163, 177);
+  border-radius: 0.5rem;
+  color: rgb(170, 99, 99);
+}
+
+.xClose:hover {
+  background-color: rgb(255, 134, 152);
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.zIndex {
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
